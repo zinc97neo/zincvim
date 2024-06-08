@@ -1,5 +1,5 @@
 {
-  description = "Ahwx' Neovim configuration, declaratively written using Nix";
+  description = "Zinc' Neovim configuration, declaratively written using Nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -37,7 +37,19 @@
 
         packages = {
           # Lets you run `nix run .` to start nixvim
-          default = zincvim;
+          default = pkgs.stdenv.mkDerivation {
+            pname = "zincvim";
+            version = "0.0.1";
+            src = zincvim;
+            buildInputs = [ zincvim pkgs.rsync ];
+            installPhase = ''
+              mkdir -p $out
+              rsync -av --exclude=bin/nvim $src/ $out/
+              chmod +w $out/bin
+              cp $src/bin/nvim $out/bin/zincvim
+              chmod -w $out/bin
+            '';
+          };
         };
       };
   };
