@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./treesitter
     ./visuals
   ];
 }
