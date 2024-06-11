@@ -22,7 +22,11 @@
     # Clipboard.
     clipboard = {
       register = "unnamedplus";
-      providers.xclip.enable = true;
+      providers = {
+        xclip.enable = true;
+        wl-copy.enable = true;
+        xsel.enable = true;
+      };
     };
   };
 }
