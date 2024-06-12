@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./editor
     ./treesitter
     ./visuals
   ];

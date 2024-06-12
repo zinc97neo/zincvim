@@ -6,7 +6,7 @@
   keymaps = [
     {
       mode = [ "n" ];
-      key = "<C-L>";
+      key = "<S-L>";
       action = "<cmd>BufferLineCycleNext<cr>";
       options = {
         desc = "Switch to Next Buffer";
@@ -14,7 +14,7 @@
     }
     {
       mode = [ "n" ];
-      key = "<C-H>";
+      key = "<S-H>";
       action = "<cmd>BufferLineCyclePrev<cr>";
       options = {
         desc = "Switch to Prev Buffer";
