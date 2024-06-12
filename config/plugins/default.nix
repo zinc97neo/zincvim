@@ -4,5 +4,6 @@
     ./editor
     ./treesitter
     ./visuals
+    ./infrastructure
   ];
 }
