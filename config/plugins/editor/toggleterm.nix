@@ -5,8 +5,10 @@
       direction = "float";
       shell = "${pkgs.zsh}/bin/zsh";
       float_opts = {
-        border = "double";
+        border = "single";
+        title_pos = "center";
       };
+      winbar.enable = true;
     };
   };
   keymaps = [
