@@ -1,8 +1,8 @@
 {
   plugins.bufferline = {
     enable = true;
+    alwaysShowBufferline = false;
   };
-
   keymaps = [
     {
       mode = [ "n" ];

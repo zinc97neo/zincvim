@@ -85,6 +85,14 @@
     }
     {
       mode = [ "n" ];
+      key = "<leader>a";
+      action = "<cmd>wa<cr>";
+      options = {
+        desc = "Save All";
+      };
+    }
+    {
+      mode = [ "n" ];
       key = "<leader>hh";
       action = "<cmd>nohlsearch<cr>";
       options = {
@@ -96,7 +104,7 @@
       key = "jj";
       action = "<Esc>";
       options = {
-        desc = "Clear Search Highlight";
+        desc = "Return to normal mode";
       };
     }
   ];

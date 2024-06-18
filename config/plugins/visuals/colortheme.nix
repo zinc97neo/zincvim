@@ -1,6 +1,8 @@
-{ pkgs, ... }: {
-  extraPlugins = with pkgs.vimPlugins; [
-    everforest
-  ];
-  extraConfigLua = builtins.readFile ./lua/colortheme.lua;
+{ ... }: {
+  colorschemes = {
+    catppuccin = {
+      enable = true;
+      settings.flavour = "macchiato";
+    };
+  };
 }
