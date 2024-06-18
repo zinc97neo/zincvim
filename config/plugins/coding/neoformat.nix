@@ -1,5 +1,4 @@
-{ helpers, pkgs, ... }:
-
+{ pkgs, ... }:
 {
   extraPlugins = with pkgs.vimPlugins; [
     neoformat
@@ -15,6 +14,10 @@
     cmake-format
     # Rust
     rustfmt
+    # HTML, JSON, CSS, Js
+    prettierd
+    # Toml
+    taplo
   ];
 
   # Auto format auto command
