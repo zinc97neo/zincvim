@@ -2,6 +2,12 @@
   plugins.bufferline = {
     enable = true;
     alwaysShowBufferline = false;
+    offsets = [{
+      filetype = "neo-tree";
+      text = "File Explorer";
+      text_align = "center";
+      separator = true;
+    }];
   };
   keymaps = [
     {

@@ -35,6 +35,9 @@
         taplo = {
           enable = true;
         };
+        html.enable = true;
+        # typescript
+        tsserver.enable = true;
       };
     };
     lsp-lines = {
